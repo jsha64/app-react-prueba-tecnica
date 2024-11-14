@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Login() {
   return (
     <div className='flex flex-row w-[1440px] h-[900px]'>
-        <div className='flex bg-[red] w-[50%] h-full justify-center items-center'>
+        <div className='flex bg-[#FF6752] w-[50%] h-full justify-center items-center'>
         <div className='flex rounded-full justify-center bg-white w-[365px] h-[365px]'>
             <Image alt='image' src={'pet.svg'} width={208} height={195} />
         </div>

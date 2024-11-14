@@ -1,100 +1,147 @@
+import React from "react";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="flex flex-col w-[1660px] h-[3123px]">
+      <div className="flex flex-row justify-end h-[3%]">
+        <div className="flex w-full h-auto justify-center">
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+        <div className="flex w-2/4 justify-start">
+          <Image 
+            alt="pet"
+            src={'pet.svg'}
+            width={20}
+            height={20}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div className="flex w-2/4 justify-center">
+          <ul className="flex flex-row space-x-20 items-center">
+            <li>dkjllsjlk</li>
+            <li>dksjflk</li>
+            <li>odkjsfl</li>
+            <li>ofjsdlj</li>
+            <li>ksflkdjsf</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+
+      <div className="flex flex-row h-[15%]">
+        <div className="flex flex-col">
+          <p>We Get Pet Care!</p>
+          <p>For over 17 Years, Fetch! Pet Care has been a trusted partner in keeping pets healthy and happy!</p>
+          <div className="flex flex-row">
+            <button className="flex border justify-center items-center rounded-full w-48 h-8">Schedule Service</button>
+            <p>Or Call 866.338.2463</p>
+          </div>
+        </div>
+        <div className="">
+          <div className="w-52 h-52 bg-[#FFE530] rounded-full">
+            <Image className="justify-center items-center" alt="pet" src={'pet.svg'} width={20} height={20}/>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-row justify-center">
+        <div className="flex flex-col w-[45%] justify-start">
+          <div className="border space-y-12 w-3/5 h-3/5">
+            <p>Our Services</p>
+            <p>National Brand With a Local Feel. Experience the Fetch! Difference</p>
+            <p>Enter Your Location and Fetch Our Services</p>
+            <input type="text" />
+            <button></button>
+          </div>
+        </div>
+          <div className="flex justify-end">
+            <div className="grid gap-x-9 gap-y-10 grid-cols-2 content-center">
+              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
+              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
+              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
+              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
+            </div>
+          </div>
+        
+      </div>
+
+      <div>
+        <p></p>
+        <div>
+          <button></button>
+          <div></div>
+          <div></div>
+          <div></div>
+          <button></button>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div>
+          <p></p>
+          <p></p>
+          <p></p>
+          <input type="text" />
+          <button></button>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <p></p>
+          <p></p>
+          <button></button>
+        </div>
+      </div>
+
+      <footer>
+        <div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div>
+          <p></p>
+          <p></p>
+          <input type="text" name="" id="" />
+          <button></button>
+        </div>
+        
       </footer>
     </div>
   );
