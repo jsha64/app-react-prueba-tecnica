@@ -12,6 +12,7 @@ type InputProps = {
 
 export default function Input({ type, value, onChange, placeholder, required, className}: InputProps) {
   return (
+    <div className="space-y-4" >
     <input
       type={type}
       value={value}
@@ -20,5 +21,6 @@ export default function Input({ type, value, onChange, placeholder, required, cl
       required={required}
       className={className}
     />
+    </div>
   );
 }

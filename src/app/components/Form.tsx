@@ -8,7 +8,7 @@ type FormProps = {
 
 export default function Form({ onSubmit, children }: FormProps) {
   return (
-    <form onSubmit={onSubmit} className='flex flex-col w-[448px]'>
+    <form onSubmit={onSubmit} className='flex flex-col w-[448px] space-y-6'>
       {children}
     </form>
   );

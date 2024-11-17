@@ -2,15 +2,17 @@
 import React from 'react';
 
 type ButtonProps = {
-  place
+  title: string;
   onClick?: () => void;
-  type?: 'button' | 'submit' | 'reset';
+  type: "submit" | "button"
   disabled?: boolean;
   className: string;
 };
 
-export default function Button({ children, onClick, type, disabled = false, className }: ButtonProps) {
+export default function Button({ children, onClick, type, disabled = false, className, title }: ButtonProps) {
   return (
-    <input type={type} onClick={onClick} disabled={disabled} className={className}  />
+    <button type={type} onClick={onClick} disabled={disabled} className={className} title={title}>
+        Enviar
+    </button>
   );
 }
