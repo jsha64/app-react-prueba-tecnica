@@ -1,36 +1,44 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Pre-requerimientos
 
-First, run the development server:
+`Git >=V2.46.0`
+`Node >=v20.18.0`
+
+## Instalación Win
+
+Git lo puedes descargarla en la página oficial de Node `https://git-scm.com/downloads/win` y Node `https://nodejs.org/en/`
+
+## Instalacion Linux/Unix
+
+Aqui debes instalar debes la consola bash:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+sudo apt-get install git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Puede buscar el comando desde la pagina oficial
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`https://git-scm.com/downloads/linux`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Con node puede usar instalar el package con nvm que esta en el enlace alli esta la instruccion para instalar recomendacion que sea la version LTS mas estable que exista
 
-## Learn More
+`https://nodejs.org/en/download/package-manager`
 
-To learn more about Next.js, take a look at the following resources:
+## Instrucción
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Primero debes clonar la app con git:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+`git clone https://github.com/jsha64/app-react-prueba-tecnica`
 
-## Deploy on Vercel
+Después de clonar entrar al directorio e instala las dependencias con Node:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`npm install`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Luego de esto abre la terminal o consola y escribir el comando que levanta el servidor local:
+
+`npm run dev`
+
+Abre [http://localhost:3000](http://localhost:3000) para que el navegador muestre los resultados.
+
+El lado del front y back están unidos en un mismo servidor por tanto si quieres probar el endpoint pues usar de preferencia Postman la descargas [Aqui](https://www.postman.com/downloads/)
