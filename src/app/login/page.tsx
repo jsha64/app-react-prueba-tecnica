@@ -16,6 +16,8 @@ export default function LoginPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setError('');
+    setLoading(true);
 
     const res = await fetch("/api/login", {
       method: "POST",
@@ -81,9 +83,10 @@ export default function LoginPage() {
           
           <Button
             type="submit"
+            disabled={loading}
             className='w-2/5 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-medium'
             >
-              Iniciar Sesion
+              {loading ? "Cargando..." : "Iniciar Sesión"}
             </Button>
           <div className="text-center">
               <span className="text-sm text-gray-500">
