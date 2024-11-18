@@ -2,17 +2,19 @@
 import React from 'react';
 
 type ButtonProps = {
-  title: string;
+  children: React.ReactNode;
   onClick?: () => void;
   type: "submit" | "button"
   disabled?: boolean;
   className: string;
 };
 
-export default function Button({ children, onClick, type, disabled = false, className, title }: ButtonProps) {
+export default function Button({ children, onClick, type, disabled = false, className }: ButtonProps) {
   return (
-    <button type={type} onClick={onClick} disabled={disabled} className={className} title={title}>
-        Enviar
-    </button>
+    <div className='flex justify-center w-full'>
+      <button type={type} onClick={onClick} disabled={disabled} className={className}>
+        {children}
+      </button>
+    </div>
   );
 }

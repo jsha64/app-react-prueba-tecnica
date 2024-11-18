@@ -33,8 +33,8 @@ export default function LoginPage() {
   };
 
   return (
-    <div className='flex min-h-screen flex'>
-        <div className='flex bg-[#FF6752] w-1/2 flex items-center justify-center relative'>
+    <div className='flex min-h-screen'>
+        <div className='flex bg-[#FF6752] w-1/2 items-center justify-center relative'>
         <div className='flex rounded-full justify-center bg-white w-[365px] h-[365px]'>
             <Image alt='image' src={'pet.svg'} width={208} height={195} />
         </div>
@@ -57,6 +57,7 @@ export default function LoginPage() {
             <Input 
               type="email"
               value={email}
+              placeholder='EMAIL'
               onChange={(e)=>setEmail(e.target.value)}
               className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-coral-500 focus:border-transparent outline-none transition'
               required
@@ -64,6 +65,7 @@ export default function LoginPage() {
             <Input 
               type="password"
               value={password}
+              placeholder='CONTRASENA'
               onChange={(e)=>setPassword(e.target.value)}
               className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-coral-500 focus:border-transparent outline-none transition'
               required
@@ -79,15 +81,16 @@ export default function LoginPage() {
           
           <Button
             type="submit"
-            title="Enviar"
-            className='w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition font-medium'
+            className='w-2/5 bg-blue-500 text-white py-3 rounded-full hover:bg-blue-600 transition font-medium'
             >
+              Iniciar Sesion
             </Button>
           <div className="text-center">
               <span className="text-sm text-gray-500">
+                AUN NO TENGO CUENTA
                 <Link 
                   href="/register" 
-                  className="text-blue-500 hover:text-blue-600 transition font-medium"
+                  className="pl-1 text-blue-500 hover:text-blue-600 transition font-medium"
                 >
                   REGISTRARSE
                 </Link>
