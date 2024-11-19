@@ -31,7 +31,7 @@ Primero debes clonar la app con git:
 
 `git clone https://github.com/jsha64/app-react-prueba-tecnica`
 
-Después de clonar entrar al directorio e instala las dependencias con Node:
+Después de clonar entrar al directorio `cd app-react-prueba-tecnica/` e instala las dependencias con npm:
 
 `npm install`
 
