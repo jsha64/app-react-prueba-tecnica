@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex flex-col min-w-screen min-h-screen">
-      <div className="flex flex-row justify-end h-[3%]">
+      <div className="flex flex-row justify-end h-32">
         <div className="flex w-full h-auto justify-center">
 
         <div className="flex w-2/4 justify-start">
@@ -27,8 +27,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-row h-[15%]">
-        <div className="flex flex-col">
+      <div className="flex flex-row h-[900px]">
+        <div className="flex flex-col justify-center pl-12 space-y-12">
           <p>¡Cuidamos a nuestras mascotas!</p>
           <p>¡Por más de 17 años, Fetch! Pet Care ha sido un socio de confianza para mantener a las mascotas sanas y felices!</p>
           <div className="flex flex-row">
@@ -36,9 +36,9 @@ export default function Home() {
             <p>o llame al 866.338.2463</p>
           </div>
         </div>
-        <div className="">
-          <div className="w-52 h-52 bg-[#FFE530] rounded-full">
-            <Image className="justify-center items-center" alt="pet" src={'pet.svg'} width={20} height={20}/>
+        <div className="flex w-2/4 h-full justify-center items-center">
+          <div className="flex items-end justify-center w-80 h-80 bg-[#FFE530] rounded-full">
+            <Image className="flex justify-center inset-0" alt="pet" src={'/FAVPNG_golden-retriever-labrador-retriever-puppy-pet-sitting-tweed-water-spaniel_fTGr4pkV@2x.png'} width={270} height={270}/>
           </div>
         </div>
       </div>
@@ -55,10 +55,10 @@ export default function Home() {
         </div>
           <div className="flex justify-end">
             <div className="grid gap-x-9 gap-y-10 grid-cols-2 content-center">
-              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
-              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
-              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
-              <div className="bg-white w-[249px] h-[249px] rounded-[20px]"></div>
+              <div className="bg-red-500 w-[249px] h-[249px] rounded-[20px]"></div>
+              <div className="bg-red-500 w-[249px] h-[249px] rounded-[20px]"></div>
+              <div className="bg-red-500 w-[249px] h-[249px] rounded-[20px]"></div>
+              <div className="bg-red-500 w-[249px] h-[249px] rounded-[20px]"></div>
             </div>
           </div>
         
