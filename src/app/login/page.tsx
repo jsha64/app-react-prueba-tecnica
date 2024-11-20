@@ -14,24 +14,31 @@ export default function LoginPage() {
   const [error, setError] = useState('');
   const router = useRouter();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
     setLoading(true);
 
-    const res = await fetch("/api/login", {
+    fetch("/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
+    })
+    .then(res => { 
+      return res.json().then(data => {
+        if (res.ok) {
+          router.push("/dashboard");
+        } else {
+          setError(data.error || "Error desconocido");
+          throw new Error(data.error);
+        }
+        return data;
+      });
+    })
+    .catch(error => {
+      console.error("Login error:", error);
+      setLoading(false);
     });
-
-    const data = await res.json();
-
-    if (res.ok) {
-      router.push("/dashboard");
-    } else {
-      setError(data.error || "Error desconocido");
-    }
   };
 
   return (
@@ -67,7 +74,7 @@ export default function LoginPage() {
             <Input 
               type="password"
               value={password}
-              placeholder='CONTRASENA'
+              placeholder='CONTRASEÑA'
               onChange={(e)=>setPassword(e.target.value)}
               className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-coral-500 focus:border-transparent outline-none transition'
               required
